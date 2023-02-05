@@ -20,8 +20,14 @@
                                 <rect key="frame" x="0.0" y="195" width="393" height="623"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z4V-7o-6Mk">
-                                <rect key="frame" x="0.0" y="175" width="393" height="0.0"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <rect key="frame" x="16" y="175" width="361" height="0.0"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="00N-R7-Cik">
+                                <rect key="frame" x="16" y="185" width="361" height="0.0"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -29,13 +35,18 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="aB8-nj-PEc" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="7vz-cg-thf"/>
-                            <constraint firstItem="Z4V-7o-6Mk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Gqy-lO-KYj"/>
-                            <constraint firstItem="aB8-nj-PEc" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Hz6-Wm-2eX"/>
-                            <constraint firstItem="aB8-nj-PEc" firstAttribute="top" secondItem="Z4V-7o-6Mk" secondAttribute="bottom" constant="20" id="bps-Zr-i0g"/>
-                            <constraint firstItem="Z4V-7o-6Mk" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="cvX-1t-i3l"/>
-                            <constraint firstItem="aB8-nj-PEc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="sS6-wu-ro7"/>
-                            <constraint firstItem="Z4V-7o-6Mk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="xAY-Sw-e5R"/>
+                            <constraint firstItem="00N-R7-Cik" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="-16" id="8BU-5T-mOi"/>
+                            <constraint firstItem="aB8-nj-PEc" firstAttribute="top" secondItem="00N-R7-Cik" secondAttribute="bottom" constant="10" id="8y3-ze-Zhh"/>
+                            <constraint firstItem="aB8-nj-PEc" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="DQ4-h7-hiJ"/>
+                            <constraint firstItem="00N-R7-Cik" firstAttribute="top" secondItem="Z4V-7o-6Mk" secondAttribute="bottom" constant="10" id="MEM-NH-Eq6"/>
+                            <constraint firstItem="aB8-nj-PEc" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="NDQ-gD-tT2"/>
+                            <constraint firstItem="aB8-nj-PEc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="SR6-rJ-tpo"/>
+                            <constraint firstItem="Z4V-7o-6Mk" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="-16" id="Zas-Mx-SXJ"/>
+                            <constraint firstItem="00N-R7-Cik" firstAttribute="top" secondItem="Z4V-7o-6Mk" secondAttribute="bottom" constant="10" id="r03-TL-cXE"/>
+                            <constraint firstItem="00N-R7-Cik" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="tHf-tH-6an"/>
+                            <constraint firstItem="Z4V-7o-6Mk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="tIQ-vv-VOB"/>
+                            <constraint firstItem="aB8-nj-PEc" firstAttribute="top" secondItem="00N-R7-Cik" secondAttribute="bottom" constant="10" id="yzn-DL-TUV"/>
+                            <constraint firstItem="Z4V-7o-6Mk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="z9d-37-c0n"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="What is it?" id="KMh-dI-n5J">
@@ -54,6 +65,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="imageView" destination="aB8-nj-PEc" id="aRt-yT-aOJ"/>
+                        <outlet property="resultDELabel" destination="00N-R7-Cik" id="9Uf-gF-LTr"/>
                         <outlet property="resultLabel" destination="Z4V-7o-6Mk" id="Lam-I6-ptk"/>
                     </connections>
                 </viewController>

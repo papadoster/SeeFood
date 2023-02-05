@@ -13,7 +13,9 @@
 		5C574836298F2CD900188D60 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C574834298F2CD900188D60 /* Main.storyboard */; };
 		5C574838298F2CDA00188D60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C574837298F2CDA00188D60 /* Assets.xcassets */; };
 		5C57483B298F2CDA00188D60 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C574839298F2CDA00188D60 /* LaunchScreen.storyboard */; };
-		5C574843298F2D5C00188D60 /* Inceptionv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 5C574842298F2D5C00188D60 /* Inceptionv3.mlmodel */; };
+		5C574845298F4DFF00188D60 /* MobileNetV2.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 5C574844298F4DFF00188D60 /* MobileNetV2.mlmodel */; };
+		5C57484C298F69FE00188D60 /* Translator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C57484B298F69FE00188D60 /* Translator.swift */; };
+		5C57484E298F704600188D60 /* TranslatorData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C57484D298F704600188D60 /* TranslatorData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +27,9 @@
 		5C574837298F2CDA00188D60 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5C57483A298F2CDA00188D60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5C57483C298F2CDA00188D60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5C574842298F2D5C00188D60 /* Inceptionv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Inceptionv3.mlmodel; sourceTree = "<group>"; };
+		5C574844298F4DFF00188D60 /* MobileNetV2.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MobileNetV2.mlmodel; sourceTree = "<group>"; };
+		5C57484B298F69FE00188D60 /* Translator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Translator.swift; sourceTree = "<group>"; };
+		5C57484D298F704600188D60 /* TranslatorData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslatorData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,10 +65,12 @@
 				5C57482E298F2CD900188D60 /* AppDelegate.swift */,
 				5C574830298F2CD900188D60 /* SceneDelegate.swift */,
 				5C574832298F2CD900188D60 /* ViewController.swift */,
+				5C57484B298F69FE00188D60 /* Translator.swift */,
+				5C57484D298F704600188D60 /* TranslatorData.swift */,
 				5C574834298F2CD900188D60 /* Main.storyboard */,
 				5C574837298F2CDA00188D60 /* Assets.xcassets */,
 				5C574839298F2CDA00188D60 /* LaunchScreen.storyboard */,
-				5C574842298F2D5C00188D60 /* Inceptionv3.mlmodel */,
+				5C574844298F4DFF00188D60 /* MobileNetV2.mlmodel */,
 				5C57483C298F2CDA00188D60 /* Info.plist */,
 			);
 			path = SeeFood;
@@ -86,6 +92,8 @@
 			dependencies = (
 			);
 			name = SeeFood;
+			packageProductDependencies = (
+			);
 			productName = SeeFood;
 			productReference = 5C57482B298F2CD900188D60 /* SeeFood.app */;
 			productType = "com.apple.product-type.application";
@@ -114,6 +122,8 @@
 				Base,
 			);
 			mainGroup = 5C574822298F2CD900188D60;
+			packageReferences = (
+			);
 			productRefGroup = 5C57482C298F2CD900188D60 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -142,9 +152,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				5C574833298F2CD900188D60 /* ViewController.swift in Sources */,
-				5C574843298F2D5C00188D60 /* Inceptionv3.mlmodel in Sources */,
+				5C57484E298F704600188D60 /* TranslatorData.swift in Sources */,
 				5C57482F298F2CD900188D60 /* AppDelegate.swift in Sources */,
+				5C574845298F4DFF00188D60 /* MobileNetV2.mlmodel in Sources */,
 				5C574831298F2CD900188D60 /* SceneDelegate.swift in Sources */,
+				5C57484C298F69FE00188D60 /* Translator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
